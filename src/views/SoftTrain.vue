@@ -31,6 +31,7 @@
 import HeaderReverse from '@/components/HeaderReverse.vue'
 import Countdown from '@/components/Countdown.vue'
 import Exercices from '@/assets/exercices.js'
+import genNumber from '@/services/generateNumber.js'
 
 export default {
   name: 'RandomTrain',
@@ -47,20 +48,17 @@ export default {
     }
   },
   methods: {
-    genNumber(max) {
-        return Math.floor(Math.random() * Math.floor(max));
-    },
     genExercice(){
-      let first = this.genNumber(Exercices.exercicesOne.length);
+      let first = genNumber(Exercices.exercicesOne.length);
       this.exerciceOne = Exercices.exercicesOne[first];
 
-      let second = this.genNumber(Exercices.exercicesTwo.length);
+      let second = genNumber(Exercices.exercicesTwo.length);
       this.exerciceTwo = Exercices.exercicesTwo[second];
 
-      let third = this.genNumber(Exercices.exercicesFive.length);
+      let third = genNumber(Exercices.exercicesFive.length);
       this.exerciceThree = Exercices.exercicesFive[third];
 
-      let fourth = this.genNumber(Exercices.exercicesFour.length);
+      let fourth = genNumber(Exercices.exercicesFour.length);
       this.exerciceFour = Exercices.exercicesFour[fourth];
     },
     reload() {
