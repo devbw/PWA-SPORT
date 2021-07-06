@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import decrementSeconds from '@/services/countdown.js'
+
 export default {
     name: 'Countdown',
     props: {
@@ -38,21 +40,22 @@ export default {
             pause: false,
         }
     },
+    created() {
+        this.display();
+    },
     methods: {
         countDownSeconds() {
+            let {seconds, minutes} = decrementSeconds(this.minutes, this.seconds)
 
-            if(this.seconds > 0){
-                this.seconds--;
-            } else {
-                this.seconds = 59;
-                this.minutes--;
-            }
+            this.minutes = minutes;
+            this.seconds = seconds;
 
             if(this.minutes == 0 && this.seconds == 0) {
                 clearInterval(this.interval);
                 this.finish = false;
             }
 
+            this.display();
         },
         playCountDown() {
             this.interval = setInterval(() => this.countDownSeconds(), 1000);
@@ -63,6 +66,11 @@ export default {
             clearInterval(this.interval);
             this.started = true;
             this.pause = false;
+        },
+        display() {
+            if(this.seconds < 10) {
+                this.seconds = "0" + this.seconds;
+            }
         }
     },
 }
