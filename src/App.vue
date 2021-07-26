@@ -6,6 +6,7 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
 body{
   margin: 0px;

@@ -1,6 +1,5 @@
 <template>
   <div class="main__container">
-    <HeaderReverse />
     <div class="main__container-exercices">
       <div class="container__line">
         <div class="line"></div>
@@ -29,7 +28,7 @@
 
 <script>
 
-import HeaderReverse from '@/components/HeaderReverse.vue'
+
 import Countdown from '@/components/Countdown.vue'
 import Exercices from '@/assets/exercices.js'
 import genNumber from '@/services/generateNumber.js'
@@ -37,7 +36,6 @@ import genNumber from '@/services/generateNumber.js'
 export default {
   name: 'HardTrain',
   components: {
-    HeaderReverse,
     Countdown,
   },
   data() {

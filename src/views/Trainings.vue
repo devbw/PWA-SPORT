@@ -1,6 +1,5 @@
 <template>
   <div class="main__container">
-    <HeaderReverse />
     <div class="container">
       <div class="container__line">
         <div class="line"></div>
@@ -63,13 +62,12 @@
 
 <script>
 
-import HeaderReverse from '@/components/HeaderReverse.vue'
+
 import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Trainings',
   components: {
-    HeaderReverse,
     Footer,
   }
 }

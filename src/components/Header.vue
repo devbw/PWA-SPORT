@@ -4,7 +4,7 @@
       <h1>30'FIT</h1>
       <span>THE SPORT APP</span>
     </div>
-    <i class="uil uil-dumbbell"></i>
+    <i class="fas fa-dumbbell"></i>
 
   </div>
 </template>
@@ -23,14 +23,19 @@ export default {
   justify-content: center;
   align-items: top;
   width: 100%;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: .5rem 0;
+  margin-bottom: 2rem;
 }
 h1{
   font-size: 4rem;
   margin: 0;
+  color: #FFF;
+  font-family: 'Barlow', sans-serif;
 }
-.uil-dumbbell{
-  font-size: 4rem;
+.fa-dumbbell{
+  font-size: 3.8rem;
+  margin-left: .6rem;
+  padding-top: .7rem;
   color :rgba(184, 0, 194, 0.37);
 }
 span{
