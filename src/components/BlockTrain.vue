@@ -6,7 +6,7 @@
       <span class="input__price">{{ minutes }} minutes</span>
     </div>
     <p>Choisissez le matériel</p>
-    <p class="info">Veillez à toujours sélectionner au moins poids de corps et/ou paire d'haltères pour avoir un entrainement complet</p>
+    <p class="info">Sélectionnez le matériel à votre disposition </p>
     <div class="block__checkbox">
       <div class="block__display">
         <div>
@@ -161,9 +161,14 @@ export default {
       this.exerciceDips();
       this.exercicePull();
       this.groupExercices();
-      this.replaceExercices(this.choosenExercices);
-      localStorage.setItem('time', this.minutes);
-      this.$router.push("/custom-training");
+     if(this.choosenExercices[0][0] === ['']) {
+       this.$router.push("/home-training");
+     } else {
+       this.replaceExercices(this.choosenExercices);
+       localStorage.setItem('time', this.minutes);
+       this.$router.push("/custom-training");
+     }
+
     },
   },
 };

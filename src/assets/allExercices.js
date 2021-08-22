@@ -85,7 +85,7 @@ const exercices = [
     muscles: "Pectoraux",
     category: "bodyweight",
     img:
-      "https://musculation-nutrition.fr/wp-content/uploads/2017/12/pompe-classique-pectoraux-exercice-300x250.png",
+      "https://musculation-nutrition.fr/wp-content/uploads/2020/03/dips-exercice-1.png",
   },
   {
     name: "Dips barre",
@@ -93,7 +93,7 @@ const exercices = [
     muscles: "Pectoraux",
     category: "dipsbar",
     img:
-      "https://musculation-nutrition.fr/wp-content/uploads/2017/12/pompe-classique-pectoraux-exercice-300x250.png",
+      "http://www.fitnition.fr/wp-content/uploads/2017/06/Triceps-Dip-2-990x674.png",
   },
   {
     name: "Renegade Row",

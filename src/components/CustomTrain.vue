@@ -3,7 +3,7 @@
     <div class="exercice" v-for="(exercice, name) in exercices" :key="name">
       <div class="display">
         <span class="exercice__name"> {{ exercice.name }} </span>
-        <span class="exercice__name">Répétitions : {{ exercice.reps }}</span>
+        <span class="exercice__name">Reps : {{ exercice.reps }}</span>
       </div>
       <div>
         <span class="link" @click="openModale(exercice.img)">Voir exercice</span>

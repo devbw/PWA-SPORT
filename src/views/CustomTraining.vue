@@ -2,6 +2,7 @@
   <div class="background">
     <Header />
     <Title title="Votre entraînement"/>
+    <p class="info">Voici votre entraînement généré aléatoirement suivant vos paramètres. Effectuez cette boucle d'exercices jusqu'à la fin du chronomètre !</p>
     <Custom />
   </div>
 </template>
@@ -30,9 +31,14 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 span{
   color: rgba(255, 255, 255, 0.795);
   font-size: 0.8rem;
+}
+.info{
+  font-size: 0.8rem;
+  margin-top: 0;
 }
 </style>
