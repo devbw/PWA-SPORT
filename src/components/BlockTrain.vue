@@ -124,10 +124,6 @@ export default {
           this.bodyweight = this.exercices.filter(
             (exercice) => exercice.category === "bodyweight"
           );
-        } else {
-          this.dipsbar = this.exercices.filter(
-            (exercice) => exercice.category === "dipsbar"
-          );
         }
       }
     },
@@ -139,10 +135,6 @@ export default {
           );
           this.bodyweight = this.exercices.filter(
             (exercice) => exercice.category === "bodyweight"
-          );
-        } else {
-          this.pullupbar = this.exercices.filter(
-            (exercice) => exercice.category === "pullupbar"
           );
         }
       }
