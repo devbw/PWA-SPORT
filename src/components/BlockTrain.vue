@@ -6,6 +6,7 @@
       <span class="input__price">{{ minutes }} minutes</span>
     </div>
     <p>Choisissez le matériel</p>
+    <p class="info">Veillez à toujours sélectionner au moins poids de corps et/ou paire d'haltères pour avoir un entrainement complet</p>
     <div class="block__checkbox">
       <div class="block__display">
         <div>
@@ -13,7 +14,7 @@
             type="checkbox"
             id="noMaterial"
             class="checkboxs"
-            value="noMaterial"
+            value="bodyweight"
             v-model="checkedMaterials"
           />
           <label for="noMaterial"></label>
@@ -28,13 +29,13 @@
             type="checkbox"
             id="kettlebell"
             class="checkboxs"
-            value="kettlebell"
+            value="dumbell"
             v-model="checkedMaterials"
           />
           <label for="kettlebell"></label>
         </div>
         <div class="checkbox__text">
-          <span>Paire d'haltères / kettlebell</span>
+          <span>Paire kettlebell/haltères</span>
         </div>
       </div>
       <div class="block__display">
@@ -43,7 +44,7 @@
             type="checkbox"
             id="pullup"
             class="checkboxs"
-            value="pullUp"
+            value="pullupbar"
             v-model="checkedMaterials"
           />
           <label for="pullup"></label>
@@ -58,7 +59,7 @@
             type="checkbox"
             id="dips"
             class="checkboxs"
-            value="dipsBar"
+            value="dipsbar"
             v-model="checkedMaterials"
           />
           <label for="dips"></label>
@@ -68,13 +69,14 @@
         </div>
       </div>
     </div>
-    <Button message="Commencer !" />
+    <Button message="Commencer !" @click="showExercice()" />
   </div>
 </template>
 
 <script>
 import Button from "@/components/TrainButton.vue";
-import Exercices from '../assets/allExercices.js'
+import Exercices from "../assets/allExercices.js";
+import { mapActions } from "vuex";
 
 export default {
   name: "BlockTrain",
@@ -83,20 +85,87 @@ export default {
   },
   data() {
     return {
-      minutes: 0,
+      minutes: 5,
       checkedMaterials: [],
-      exercices: [],
+      exercices: Exercices,
+      bodyweight: [],
+      dumbell: [],
+      dipsbar: [],
+      pullupbar: [],
+      choosenExercices: [],
     };
   },
   methods: {
-    getExercices() {
-      this.exercices.push(Exercices);
-      console.log(this.exercices);
+    ...mapActions("exercices", ["replaceExercices"]),
+    exerciceBodyweight() {
+      for (let i = 0; i < this.checkedMaterials.length; i++) {
+        if (this.checkedMaterials[i] === "bodyweight") {
+          this.bodyweight = this.exercices.filter(
+            (exercice) => exercice.category === "bodyweight"
+          );
+        }
+      }
+    },
+    exerciceDumbell() {
+      for (let i = 0; i < this.checkedMaterials.length; i++) {
+        if (this.checkedMaterials[i] === "dumbell") {
+          this.dumbell = this.exercices.filter(
+            (exercice) => exercice.category === "dumbell"
+          );
+        }
+      }
+    },
+    exerciceDips() {
+      for (let i = 0; i < this.checkedMaterials.length; i++) {
+        if (this.checkedMaterials[i] === "dipsbar" && this.checkedMaterials[i] !== "bodyweight") {
+          this.dipsbar = this.exercices.filter(
+            (exercice) => exercice.category === "dipsbar"
+          );
+          this.bodyweight = this.exercices.filter(
+            (exercice) => exercice.category === "bodyweight"
+          );
+        } else {
+          this.dipsbar = this.exercices.filter(
+            (exercice) => exercice.category === "dipsbar"
+          );
+        }
+      }
+    },
+    exercicePull() {
+      for (let i = 0; i < this.checkedMaterials.length; i++) {
+        if (this.checkedMaterials[i] === "pullupbar" && this.checkedMaterials[i] !== "bodyweight") {
+          this.pullupbar = this.exercices.filter(
+            (exercice) => exercice.category === "pullupbar"
+          );
+          this.bodyweight = this.exercices.filter(
+            (exercice) => exercice.category === "bodyweight"
+          );
+        } else {
+          this.pullupbar = this.exercices.filter(
+            (exercice) => exercice.category === "pullupbar"
+          );
+        }
+      }
+    },
+    groupExercices() {
+      this.choosenExercices = [
+        ...this.bodyweight,
+        ...this.dumbell,
+        ...this.dipsbar,
+        ...this.pullupbar,
+      ];
+    },
+    showExercice() {
+      this.exerciceBodyweight();
+      this.exerciceDumbell();
+      this.exerciceDips();
+      this.exercicePull();
+      this.groupExercices();
+      this.replaceExercices(this.choosenExercices);
+      localStorage.setItem('time', this.minutes);
+      this.$router.push("/custom-training");
     },
   },
-  created() {
-    this.getExercices();
-  }
 };
 </script>
 
@@ -106,10 +175,11 @@ input[type="checkbox"] {
   width: 0;
   visibility: hidden;
 }
-
+.info{
+  font-size: 0.7rem;
+}
 label {
   cursor: pointer;
-  text-indent: -9999px;
   width: 50px;
   height: 25px;
   background: rgba(255, 255, 255, 0.5);

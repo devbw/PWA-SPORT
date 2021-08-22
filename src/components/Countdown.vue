@@ -1,5 +1,13 @@
 <template>
-    <div class="container__countdown">
+    <div class="countdown__block">
+        <div class="container__button">
+            <button class="trigger" @click='playCountDown()' v-if='started'>
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="trigger" @click='pauseCountDown()' v-if='pause'>
+                <i class="fas fa-pause"></i>
+            </button>
+        </div>
         <div class="container__minutes" v-if='finish'>
             {{ minutes }} : {{ seconds }}
         </div>
@@ -7,13 +15,8 @@
             <h4>TRAINING DONE !</h4>
         </div>
         <div class="container__button">
-            <button class="button" @click='playCountDown()' v-if='started'>
-                <i class="uil uil-stopwatch benefit__icon"></i>
-                START
-            </button>
-            <button class="button" @click='pauseCountDown()' v-if='pause'>
-                <i class="uil uil-pause benefit__icon"></i>
-                PAUSE
+            <button class="trigger" @click="redirect()">
+                <i class="fas fa-times"></i>
             </button>
         </div>
     </div>
@@ -71,13 +74,35 @@ export default {
             if(this.seconds < 10) {
                 this.seconds = "0" + this.seconds;
             }
-        }
+        },
+        redirect() {
+            this.$router.push("/home-training");
+        },
     },
 }
 </script>
 
 
 <style scoped>
+.countdown__block{
+  border: 2px solid #B800C2;
+  box-sizing: border-box;
+  border-radius: 20px 20px 0 0;
+  margin-top: 1rem;
+  width: 100%;
+  padding: .8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+.trigger{
+    border: 2px #B800C2 solid;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #010030;
+}
 .container__countdown{
     display: flex;
     flex-direction: column;
@@ -86,6 +111,7 @@ export default {
 .container__minutes,
 .container__seconds{
     font-size: 2rem;
+    color: white;
 }
 .divider{
     margin: 0 .5rem 0 .5rem;
@@ -98,7 +124,15 @@ export default {
 }
 h4{
     color: #B800C2;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.fas{
+    color: white;
+    font-size: 1.1rem;
+}
+.fa-times{
+    font-size: 1.3rem;
 }
 .scale-in-center {
 	-webkit-animation: scale-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

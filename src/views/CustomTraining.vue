@@ -1,26 +1,22 @@
 <template>
   <div class="background">
     <Header />
-    <Title title="Créez votre entraînement"/>
-    <Block />
-    <Title title="Entraînements low-impact"/>
-    <Low message="En cours de construction. . ."/>
+    <Title title="Votre entraînement"/>
+    <Custom />
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
 import Title from '@/components/Title.vue';
-import Block from '@/components/BlockTrain.vue';
-import Low from '@/components/LowImpactTrain.vue';
+import Custom from '@/components/CustomTrain.vue';
 
 export default {
   name: "HomeTrainings",
   components: {
     Header,
     Title,
-    Block,
-    Low,
+    Custom,
   },
 };
 </script>
