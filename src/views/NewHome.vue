@@ -11,7 +11,7 @@
     <Message message="Configurez votre entraînement selon votre matériel." />
     <Button message="Commencer !" @click="redirect()" />
     <div class="version">
-      <span>version 3.0.1</span>
+      <span>version 3.0.3</span>
     </div>
   </div>
 </template>

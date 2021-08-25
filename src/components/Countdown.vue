@@ -85,9 +85,9 @@ export default {
 
 <style scoped>
 .countdown__block{
-  border: 2px solid #B800C2;
   box-sizing: border-box;
   border-radius: 20px 20px 0 0;
+  border-top: 2px rgba(255, 255, 255, 0.2) solid;
   margin-top: 1rem;
   width: 100%;
   padding: .8rem;

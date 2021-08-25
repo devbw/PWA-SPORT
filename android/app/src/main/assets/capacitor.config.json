@@ -1,0 +1,6 @@
+{
+	"appId": "fr.devbw.fit",
+	"appName": "fit",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">fit</string>
+    <string name="title_activity_main">fit</string>
+    <string name="package_name">fr.devbw.fit</string>
+    <string name="custom_url_scheme">fr.devbw.fit</string>
+</resources>

@@ -3,7 +3,7 @@
     <div class="exercice" v-for="(exercice, name) in exercices" :key="name">
       <div class="display">
         <span class="exercice__name"> {{ exercice.name }} </span>
-        <span class="exercice__name">Reps : {{ exercice.reps }}</span>
+        <span class="exercice__name dark">Reps : {{ exercice.reps }}</span>
       </div>
       <div>
         <span class="link" @click="openModale(exercice.img)">Voir exercice</span>
@@ -87,6 +87,7 @@ export default {
   max-width: 500px;
 }
 .exercice{
+  background: #B800C2;
   border: 2px solid #B800C2;
   box-sizing: border-box;
   border-radius: 20px 20px 20px 0px;
@@ -100,12 +101,23 @@ export default {
 .display {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 .link{
-  color: #B800C2;
+  color: #010030;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 0.3rem 0.7rem;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .exercice__name{
   font-size: 1rem;
+  width: 50%;
+}
+.dark{
+  color: #010030;
+  text-align: right;
 }
 .exercice_img{
   width: 90%;

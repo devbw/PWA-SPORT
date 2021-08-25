@@ -5,7 +5,7 @@ const exercices = [
     muscles: "Cardio",
     category: "bodyweight",
     img:
-      "https://www.fitadium.com/img/cms/Bodyweight/05161101-Jumping-Jack_Cardio_small.png",
+      "https://i.pinimg.com/originals/34/cb/99/34cb992c8c0c57e896a22c1036a7c038.gif",
   },
   {
     name: "Swing",
@@ -13,7 +13,7 @@ const exercices = [
     muscles: "Cardio",
     category: "dumbell",
     img:
-      "https://www.fitadium.com/conseils/wp-content/uploads/2020/03/05491105-Kettlebell-Swing_Kettlebell_small.png?frz-v=482",
+      "https://cdn.vnexplorer.net/master/uploads/2021/07/19154800/kettlebell-exercises-benefits-and-8-effective-workouts1626680880.jpg",
   },
   {
     name: "Burpees",
@@ -21,7 +21,7 @@ const exercices = [
     muscles: "Cardio",
     category: "bodyweight",
     img:
-      "https://www.docteur-fitness.com/wp-content/uploads/2019/08/muscles-sollicites-burpees.png",
+      "https://c.tenor.com/u2-VJiigKCkAAAAC/exercise-jump.gif",
   },
   {
     name: "Montée de genoux",
@@ -29,7 +29,7 @@ const exercices = [
     muscles: "Cardio",
     category: "bodyweight",
     img:
-      "https://www.gofitnessplan.fr/images/exercises/female/high-knee-run.jpg",
+      "https://www.foodspring.de/magazine/wp-content/uploads/2020/11/Fatburn_Workout_High-Knees_%C2%A9foodspring.gif",
   },
   {
     name: "Mountain Climber",
@@ -37,7 +37,7 @@ const exercices = [
     muscles: "Cardio",
     category: "bodyweight",
     img:
-      "https://www.davidroussillon.fr/wp-content/uploads/2015/09/Mountain-climber-exercice-fitness.png",
+      "https://media1.popsugar-assets.com/files/thumbor/Iu8waoj6rmL6c7B8gZUdS1ZIa3I/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/06/08/791/n/1922729/c4943793a2ba2dd5_SlowerClimbers.gif",
   },
   {
     name: "Pompes",
@@ -45,7 +45,7 @@ const exercices = [
     muscles: "Pectoraux",
     category: "bodyweight",
     img:
-      "https://musculation-nutrition.fr/wp-content/uploads/2017/12/pompe-classique-pectoraux-exercice-300x250.png",
+      "https://thumbs.gfycat.com/GlossySkinnyDuckbillcat-max-1mb.gif",
   },
   {
     name: "Pompes claquées",
@@ -53,7 +53,7 @@ const exercices = [
     muscles: "Pectoraux",
     category: "bodyweight",
     img:
-      "https://musculation-nutrition.fr/wp-content/uploads/2017/12/pompe-classique-pectoraux-exercice-300x250.png",
+      "https://thumbs.gfycat.com/GlossySkinnyDuckbillcat-max-1mb.gif",
   },
   {
     name: "Pompes larges",
@@ -61,7 +61,7 @@ const exercices = [
     muscles: "Pectoraux",
     category: "bodyweight",
     img:
-      "https://musculation-nutrition.fr/wp-content/uploads/2017/12/pompe-classique-pectoraux-exercice-300x250.png",
+      "https://flabfix.com/wp-content/uploads/2019/08/Wide-Grip-Push-Ups.gif",
   },
   {
     name: "Pompes surélevées",
@@ -69,7 +69,7 @@ const exercices = [
     muscles: "Pectoraux",
     category: "bodyweight",
     img:
-      "https://musculation-nutrition.fr/wp-content/uploads/2017/12/pompe-classique-pectoraux-exercice-300x250.png",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/workouts/2016/03/feetelevatedpushup-1457047025.gif",
   },
   {
     name: "Pompes serrées",
@@ -77,7 +77,7 @@ const exercices = [
     muscles: "Pectoraux",
     category: "bodyweight",
     img:
-      "https://musculation-nutrition.fr/wp-content/uploads/2017/12/pompe-classique-pectoraux-exercice-300x250.png",
+      "https://flabfix.com/wp-content/uploads/2019/05/Close-Grip-Push-Ups.gif",
   },
   {
     name: "Dips chaise",
@@ -85,7 +85,7 @@ const exercices = [
     muscles: "Pectoraux",
     category: "bodyweight",
     img:
-      "https://musculation-nutrition.fr/wp-content/uploads/2020/03/dips-exercice-1.png",
+      "https://thumbs.gfycat.com/FittingImpassionedAmethystinepython-max-1mb.gif",
   },
   {
     name: "Dips barre",
@@ -93,7 +93,7 @@ const exercices = [
     muscles: "Pectoraux",
     category: "dipsbar",
     img:
-      "http://www.fitnition.fr/wp-content/uploads/2017/06/Triceps-Dip-2-990x674.png",
+      "https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/assets/dips.gif",
   },
   {
     name: "Renegade Row",
@@ -101,7 +101,7 @@ const exercices = [
     muscles: "Pectoraux",
     category: "dumbell",
     img:
-      "https://www.fitadium.com/img/cms/Kettlebell/05211101-Kettlebell-Alternating-Renegade-Row_back_small.png?frz-v=515",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/90-renegade-rows-lr-1579279878.gif",
   },
   {
     name: "Pike push-up",
@@ -109,7 +109,7 @@ const exercices = [
     muscles: "Epaules",
     category: "bodyweight",
     img:
-      "https://www.mensjournal.com/wp-content/uploads/mf/15-workouts-pikepushup-main-new.jpg?quality=86&strip=all",
+      "https://lh3.googleusercontent.com/proxy/LKm5RFWVyVOYfuFyZeWlStvoJ5FY28dExEtiRnMNpfX-JjKe1P6CxvnOGI4KjLZOGssPpvjqYiDv3g1zQsencqGh6vQ7cNZdZRZ0P-PcFIte2A",
   },
   {
     name: "Single arm press",
@@ -117,7 +117,7 @@ const exercices = [
     muscles: "Epaules",
     category: "dumbell",
     img:
-      "https://www.fitadium.com/conseils/wp-content/uploads/2020/03/05391105-Kettlebell-One-Arm-Military-Press-To-The-Side_Shoulders_small.png?frz-v=482",
+      "https://i.pinimg.com/originals/d8/03/50/d80350c686ea43cf31397589efa47e06.gif",
   },
   {
     name: "Handstand",
@@ -132,7 +132,7 @@ const exercices = [
     reps: "5",
     muscles: "Epaules",
     category: "bodyweight",
-    img: "https://i.ytimg.com/vi/aAErmRDDJKY/maxresdefault.jpg",
+    img: "https://qph.fs.quoracdn.net/main-qimg-5cf8eb52b6f648da2103ee0c9f7a4d90",
   },
   {
     name: "Sumo squat high pull",
@@ -140,7 +140,7 @@ const exercices = [
     muscles: "Epaules",
     category: "dumbell",
     img:
-      "https://www.fitadium.com/conseils/wp-content/uploads/2020/03/05481105-Kettlebell-Sumo-High-Pull_back_small.png?frz-v=482",
+      "https://i0.wp.com/post.greatist.com/wp-content/uploads/sites/2/2019/05/KETTLEBELLS_SUMO-DEADLIFT-HIGHPULL_0.gif",
   },
   {
     name: "Squat",
@@ -148,7 +148,7 @@ const exercices = [
     muscles: "Jambes",
     category: "bodyweight",
     img:
-      "https://img-4.linternaute.com/-xJtdqszf0oWjox4t1Tzot5wav4=/1500x/smart/6cb68a39a9e04f249f5f07494f722e96/ccmcms-linternaute/10763352.jpg",
+      "https://flabfix.com/wp-content/uploads/2019/08/Air-Squat.gif",
   },
   {
     name: "Goblet squat",
@@ -156,14 +156,14 @@ const exercices = [
     muscles: "Jambes",
     category: "dumbell",
     img:
-      "https://images.squarespace-cdn.com/content/v1/590a5ba12994caa0d30916a1/1493853039281-MN1H7RYYBNW7ZIP0XMFM/Image-369.jpg",
+      "https://i.pinimg.com/originals/63/be/5f/63be5f70cad75c78074a6201a854030c.gif",
   },
   {
     name: "Squat sautés",
     reps: "20",
     muscles: "Jambes",
     category: "bodyweight",
-    img: "https://passimale.fr/wp-content/uploads/2020/12/squat-saute.jpg",
+    img: "https://thumbs.gfycat.com/YellowishExhaustedDodo-size_restricted.gif",
   },
   {
     name: "Pistol squat",
@@ -171,21 +171,21 @@ const exercices = [
     muscles: "Jambes",
     category: "bodyweight",
     img:
-      "http://www.thenewpotato.com/wp-content/uploads/2016/01/Pistol_Squat-620x360.jpg",
+      "https://thumbs.gfycat.com/SilkyRipeCopperhead-max-1mb.gif",
   },
   {
     name: "Fentes",
     reps: "20",
     muscles: "Jambes",
     category: "bodyweight",
-    img: "https://mon-ideal.com/wp-content/uploads/2019/02/Fentes.jpg",
+    img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/workouts/2016/03/gobletsplitsquat-1457030805.gif",
   },
   {
     name: "Overhead lunge",
     reps: "20",
     muscles: "Jambes",
     category: "dumbell",
-    img: "https://i.ytimg.com/vi/J3DxelcaaMU/maxresdefault.jpg",
+    img: "https://i.pinimg.com/originals/0d/b0/ae/0db0ae4069133afe9668d0ac910b7f26.gif",
   },
   {
     name: "Overhead squat",
@@ -193,7 +193,7 @@ const exercices = [
     muscles: "Jambes",
     category: "dumbell",
     img:
-      "https://www.fitadium.com/conseils/wp-content/uploads/2020/03/15661105-Kettlebell-One-Arm-Overhead-Squat_Thighs_Shoulders_small.png?frz-v=482",
+      "https://thumbs.gfycat.com/ClumsyScalyHoneyeater-size_restricted.gif",
   },
   {
     name: "Fentes bulgares",
@@ -201,7 +201,7 @@ const exercices = [
     muscles: "Jambes",
     category: "bodyweight",
     img:
-      "http://www.fitnition.fr/wp-content/uploads/2018/05/Fentes-halt%C3%A8res-avec-banc-Musculation-Jambes-quadriceps-compressor-600x400.png",
+      "https://i.pinimg.com/originals/fc/e4/2d/fce42d442865e2a935e39186e4635a11.gif",
   },
   {
     name: "Single leg deadlift",
@@ -209,7 +209,7 @@ const exercices = [
     muscles: "Jambes",
     category: "dumbell",
     img:
-      "https://www.fitadium.com/conseils/wp-content/uploads/2020/03/15691105-Kettlebell-One-Legged-Deadlift_Hips_small.png?frz-v=482",
+      "https://thumbs.gfycat.com/IcyLiveChimneyswift-size_restricted.gif",
   },
   {
     name: "Fentes sautées",
@@ -217,7 +217,7 @@ const exercices = [
     muscles: "Jambes",
     category: "bodyweight",
     img:
-      "https://www.litobox.com/wp-content/uploads/2018/09/fentes-sautees-exercice-730x487.png",
+      "https://i.pinimg.com/originals/0c/50/ef/0c50ef18bc7a201683796e8bf05b1ed9.gif",
   },
 
   {
@@ -225,22 +225,22 @@ const exercices = [
     reps: "20",
     muscles: "Abdos",
     category: "bodyweight",
-    img: "https://i.ytimg.com/vi/C0NQqI9YeyQ/maxresdefault.jpg",
+    img: "https://i.imgur.com/UJAnRhJ.gif",
   },
   {
     name: "Kettlebell Crunch",
     reps: "20",
     muscles: "Abdos",
     category: "dumbell",
-    img: "https://i.ytimg.com/vi/C0NQqI9YeyQ/maxresdefault.jpg",
+    img: "https://thumbs.gfycat.com/AgedWholeChinesecrocodilelizard-max-1mb.gif",
   },
   {
     name: "Relevé de jambes couché",
-    reps: "20s",
+    reps: "20",
     muscles: "Abdos",
     category: "bodyweight",
     img:
-      "https://femme.fitness/wp-content/uploads/2018/07/brand-elevation-jambes-700x350.png",
+      "http://www.foodspring.de/magazine/wp-content/uploads/2020/11/Leg-raises-Giannis.gif",
   },
   {
     name: "Russian twist",
@@ -248,7 +248,7 @@ const exercices = [
     muscles: "Abdos",
     category: "bodyweight",
     img:
-      "https://i.pinimg.com/originals/f2/0d/2b/f20d2bf1209e70ef3177f8c50d05b046.jpg",
+      "https://j.gifs.com/mwy1v0@large.gif",
   },
   {
     name: "Planche",
@@ -256,7 +256,7 @@ const exercices = [
     muscles: "Abdos",
     category: "bodyweight",
     img:
-      "https://archzine.fr/wp-content/uploads/2020/04/astuces-comment-perdre-du-ventre-rapidement-exercice-planche-chez-soi-idee-entrainement-a-la-maison.jpg",
+      "https://i.pinimg.com/originals/cf/b5/67/cfb5677a755fe7288b608a4fec6f09a0.gif",
   },
   {
     name: "Relevé de jambes barre",
@@ -264,7 +264,7 @@ const exercices = [
     muscles: "Abdos",
     category: "pullupbar",
     img:
-      "https://sportchezsoi.com/wp-content/uploads/2016/11/hanginglegraise.jpg",
+      "https://musclewiki.com/media/uploads/bodyweight-male-hanging-knee-raises-front.gif",
   },
   {
     name: "Russian twist kettlebell",
@@ -272,7 +272,7 @@ const exercices = [
     muscles: "Abdos",
     category: "dumbell",
     img:
-      "https://as2.ftcdn.net/jpg/00/71/50/33/500_F_71503374_84n14xQo61pMVarmopQ7ugNPIyEBOexN.jpg",
+      "https://i.pinimg.com/originals/e4/4a/01/e44a01b076cef93b6042b65f15b3b6a5.gif",
   },
 
   {
@@ -281,7 +281,7 @@ const exercices = [
     muscles: "Dos",
     category: "pullupbar",
     img:
-      "https://www.histoiresdepompiers.fr/wp-content/uploads/2017/06/8685625-13711505.jpg",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/workouts/2016/03/chinup-1457101678.gif?crop=1xw:1xh;center,top&resize=480:*",
   },
   {
     name: "Rowing",
@@ -289,7 +289,7 @@ const exercices = [
     muscles: "Dos",
     category: "dumbell",
     img:
-      "https://www.fitadium.com/conseils/wp-content/uploads/2020/03/13451105-Kettlebell-Two-Arm-Row_Back_small.png?frz-v=482",
+      "https://c.tenor.com/XehF1R8EzM4AAAAC/dumbbell-row.gif",
   },
   {
     name: "Superman",
@@ -297,7 +297,7 @@ const exercices = [
     muscles: "Dos",
     category: "bodyweight",
     img:
-      "https://www.gofitnessplan.fr/images/exercises/female/dynamic-superman.jpg",
+      "https://flabfix.com/wp-content/uploads/2019/05/Superman.gif",
   },
   {
     name: "Tractions pronation",
@@ -305,7 +305,7 @@ const exercices = [
     muscles: "Dos",
     category: "pullupbar",
     img:
-      "https://fitness-life.fr/wp-content/uploads/2018/01/Traction-prise-large-Fitness-Life.jpg",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/workouts/2016/03/pullup-1456956490.gif?crop=1xw:1xh;center,top&resize=480:*",
   },
   {
     name: "Tractions prise large",
@@ -313,7 +313,7 @@ const exercices = [
     muscles: "Dos",
     category: "pullupbar",
     img:
-      "https://fitness-life.fr/wp-content/uploads/2018/01/Traction-prise-large-Fitness-Life.jpg",
+      "https://cdn.shopify.com/s/files/1/1501/0558/files/WidePullUps.gif",
   },
   {
     name: "Tractions prise serrée",
@@ -321,7 +321,7 @@ const exercices = [
     muscles: "Dos",
     category: "pullupbar",
     img:
-      "https://fitness-life.fr/wp-content/uploads/2018/01/Traction-prise-large-Fitness-Life.jpg",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/workouts/2016/03/closegripchinup-1456956391.gif",
   },
   {
     name: "Shrug",
@@ -329,7 +329,7 @@ const exercices = [
     muscles: "Dos",
     category: "dumbell",
     img:
-      "https://i1.wp.com/weighttraining.guide/wp-content/uploads/2016/10/dumbbell-shrug-990x894.png?resize=990%2C894",
+      "https://c.tenor.com/uMNZPBaaTPYAAAAC/dumbbell-shrug.gif",
   },
 ];
 

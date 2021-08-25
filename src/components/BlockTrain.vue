@@ -3,7 +3,7 @@
     <p>Choisissez la durée</p>
     <div class="block__timer">
       <input type="range" max="55" min="5" v-model="minutes" />
-      <span class="input__price">{{ minutes }} minutes</span>
+      <span class="input__minutes">{{ minutes }} minutes</span>
     </div>
     <p>Choisissez le matériel</p>
     <p class="info">Sélectionnez le matériel à votre disposition </p>
@@ -167,6 +167,9 @@ export default {
 </script>
 
 <style scoped>
+.input__minutes{
+  color: #010030;
+}
 input[type="checkbox"] {
   height: 0;
   width: 0;
@@ -210,6 +213,7 @@ input:checked + label:after {
   width: 100%;
   max-width: 500px;
   border: 2px solid #b800c2;
+  background: #b800c2;
   box-sizing: border-box;
   border-radius: 20px 20px 20px 0px;
   padding: 1rem 0;
@@ -308,12 +312,12 @@ input[type="range"]::-webkit-slider-runnable-track {
   height: 8.4px;
   cursor: pointer;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  background: #b800c27e;
+  background: rgba(255, 255, 255, 0.664);
   border-radius: 10px;
 }
 
 input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: #b800c27e;
+  background: rgba(255, 255, 255, 0.664);
 }
 
 input[type="range"]::-moz-range-track {
@@ -321,7 +325,7 @@ input[type="range"]::-moz-range-track {
   height: 8.4px;
   cursor: pointer;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  background: #b800c27e;
+  background: rgba(255, 255, 255, 0.664);
   border-radius: 10px;
 }
 

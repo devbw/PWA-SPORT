@@ -21,8 +21,9 @@ export default {
 <style scoped>
 .block__message{
   max-width: 300px;
-  background: #b800c2;
+  background: #010030b7;
   border-radius: 20px 20px 20px 0px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   margin: .5rem 0 .5rem 0;
   color: #FFF;
   cursor: pointer;
@@ -30,7 +31,7 @@ export default {
   transition: .8s;
 }
 .block__message:hover{
-  background: #b800c288;
+  background: #010030;
 }
 p{
   padding: 0 .8rem;

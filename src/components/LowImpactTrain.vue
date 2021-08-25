@@ -27,6 +27,7 @@ export default {
   width: 100%;
   max-width: 500px;
   border: 2px solid #b800c2;
+  background: #b800c2;
   box-sizing: border-box;
   border-radius: 20px 20px 20px 0px;
   padding: 1rem 0;
