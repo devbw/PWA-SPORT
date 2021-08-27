@@ -40,5 +40,6 @@ span{
 .info{
   font-size: 0.8rem;
   margin-top: 0;
+  max-width: 500px;
 }
 </style>

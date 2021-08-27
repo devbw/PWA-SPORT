@@ -109,7 +109,7 @@ const exercices = [
     muscles: "Epaules",
     category: "bodyweight",
     img:
-      "https://lh3.googleusercontent.com/proxy/LKm5RFWVyVOYfuFyZeWlStvoJ5FY28dExEtiRnMNpfX-JjKe1P6CxvnOGI4KjLZOGssPpvjqYiDv3g1zQsencqGh6vQ7cNZdZRZ0P-PcFIte2A",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/workouts/2016/03/pikepushup-1456956895.gif",
   },
   {
     name: "Single arm press",
